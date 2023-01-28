@@ -1,0 +1,7 @@
+version: '3'
+services:
+  castlemock:
+    image: castlemock/castlemock:latest
+    container_name: teslo-shop-castle-mock
+    ports:
+      - "8080:8080"
