@@ -1,0 +1,10 @@
+.item-counter-input::-webkit-outer-spin-button,
+.item-counter-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.item-counter-input {
+  -moz-appearance: textfield;
+  appearance: textfield;
+}

@@ -24,7 +24,7 @@ const ShopLayout: FC<ShopLayoutProps> = ({
 			{imageUrl && <meta name="og:image" content={imageUrl} />}
 		</Head>
 		<AppBar />
-		<Container sx={{ paddingY: 1 }} component="main">
+		<Container sx={{ paddingY: 2 }} component="main">
 			{children}
 		</Container>
 	</>

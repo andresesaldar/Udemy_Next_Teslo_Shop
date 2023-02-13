@@ -1,18 +1,18 @@
-export type ProductSizes = "XS" | "S" | "M" | "L" | "XL" | "XXL" | "XXXL";
-export type ProductTypes = "shirts" | "pants" | "hoodies" | "hats";
-export type ProductGenders = "men" | "women" | "kid" | "unisex";
+export type ProductSize = "XS" | "S" | "M" | "L" | "XL" | "XXL" | "XXXL";
+export type ProductType = "shirts" | "pants" | "hoodies" | "hats";
+export type ProductGender = "men" | "women" | "kid" | "unisex";
 
 type Product = {
-	type: ProductTypes;
+	type: ProductType;
 	description: string;
 	images: string[];
 	inStock: number;
 	price: number;
-	sizes: ProductSizes[];
+	sizes: ProductSize[];
 	tags: string[];
 	title: string;
 	slug: string;
-	gender: ProductGenders;
+	gender: ProductGender;
 };
 
 export default Product;

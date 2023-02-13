@@ -1,16 +1,10 @@
-import {
-	Card,
-	CardActionArea,
-	CardContent,
-	CardMedia,
-	Grid,
-	Typography,
-} from "@mui/material";
 import { GetStaticProps } from "next";
 import { NextPageWithLayout } from "./_app";
 import Product from "@/models/product";
+import ProductsGrid from "@/components/products/ProductsGrid";
 import { ReactElement } from "react";
 import ShopLayout from "@/layouts/ShopLayout";
+import { Typography } from "@mui/material";
 import { getAllProducts } from "@/integration/products";
 
 type HomeProps = {
@@ -25,30 +19,7 @@ const Home: NextPageWithLayout<HomeProps> = ({ products }) => (
 		<Typography variant="subtitle1" component="h2">
 			All Products
 		</Typography>
-		<Grid container spacing={2}>
-			{products.map((product) => (
-				<Grid item xs={6} sm={4} lg={3} key={product.slug}>
-					<Card>
-						<CardActionArea>
-							<CardMedia
-								component="img"
-								image={`images/products/${product.images[0]}`}
-								alt={product.title}
-							/>
-							<CardContent>
-								<Typography
-									gutterBottom
-									variant="subtitle1"
-									component="div"
-								>
-									{product.title}
-								</Typography>
-							</CardContent>
-						</CardActionArea>
-					</Card>
-				</Grid>
-			))}
-		</Grid>
+		<ProductsGrid products={products} />
 	</>
 );
 
