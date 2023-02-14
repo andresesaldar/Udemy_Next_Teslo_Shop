@@ -11,6 +11,18 @@
     <methods>
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <httpMethod>GET</httpMethod>
+            <id>4hJNHK</id>
+            <mockResponses/>
+            <name>Get current order</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>4sOnRk</resourceId>
+            <responseStrategy>RANDOM</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <defaultMockResponseId>p7tJZC</defaultMockResponseId>
             <httpMethod>GET</httpMethod>
             <id>j2cZn9</id>
@@ -25,11 +37,11 @@
         <method>
             <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
             <httpMethod>GET</httpMethod>
-            <id>4hJNHK</id>
+            <id>zES5WU</id>
             <mockResponses/>
-            <name>Get current order</name>
+            <name>Get client orders history</name>
             <networkDelay>0</networkDelay>
-            <resourceId>4sOnRk</resourceId>
+            <resourceId>DUT1Vg</resourceId>
             <responseStrategy>RANDOM</responseStrategy>
             <simulateNetworkDelay>false</simulateNetworkDelay>
             <status>MOCKED</status>
@@ -71,8 +83,41 @@
             <simulateNetworkDelay>false</simulateNetworkDelay>
             <status>MOCKED</status>
         </method>
+        <method>
+            <currentResponseSequenceIndex>0</currentResponseSequenceIndex>
+            <defaultMockResponseId>eo5aMY</defaultMockResponseId>
+            <httpMethod>GET</httpMethod>
+            <id>adAkYN</id>
+            <mockResponses/>
+            <name>Get order by id</name>
+            <networkDelay>0</networkDelay>
+            <resourceId>TxS8SN</resourceId>
+            <responseStrategy>QUERY_MATCH</responseStrategy>
+            <simulateNetworkDelay>false</simulateNetworkDelay>
+            <status>MOCKED</status>
+        </method>
     </methods>
     <mockResponses>
+        <mockResponse>
+            <body>{"address":{"address":"Cra 11a No. 191-28","addressExtra":"Torre 2 Apto 1215","city":"Bogotá","country":{"_id":"1","name":"Colombia"},"lastName":"Saldarriaga","name":"Andrés","phoneNumber":"+573188386242","postalCode":"110141"},"items":[{"description":"Introducing the Tesla Chill Collection. The Men's Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.","gender":"men","images":["1740176-00-A_0_2000.jpg","1740176-00-A_1.jpg"],"inStock":7,"price":75,"sizes":["XS","S","M","L","XL","XXL"],"slug":"mens_chill_crew_neck_sweatshirt","tags":["sweatshirt"],"title":"Men's Chill Crew Neck Sweatshirt","type":"shirts"},{"description":"The Men's Quilted Shirt Jacket features a uniquely fit, quilted design for warmth and mobility in cold weather seasons. With an overall street-smart aesthetic, the jacket features subtle silicone injected Tesla logos below the back collar and on the right sleeve, as well as custom matte metal zipper pulls. Made from 87% nylon and 13% polyurethane.","gender":"men","images":["1740507-00-A_0_2000.jpg","1740507-00-A_1.jpg"],"inStock":5,"price":200,"sizes":["XS","S","M","XL","XXL"],"slug":"men_quilted_shirt_jacket","tags":["jacket"],"title":"Men's Quilted Shirt Jacket","type":"shirts"}]}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>Content-Type</name>
+                    <value>application/json</value>
+                </httpHeader>
+            </httpHeaders>
+            <httpStatusCode>200</httpStatusCode>
+            <id>8rlGgQ</id>
+            <jsonPathExpressions/>
+            <methodId>4hJNHK</methodId>
+            <name>Get current order</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>false</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
         <mockResponse>
             <body>{"description":"Introducing the Tesla Chill Collection. The Men’s Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.","gender":"men","images":["1740176-00-A_0_2000.jpg","1740176-00-A_1.jpg"],"inStock":7,"price":75,"sizes":["XS","S","M","L","XL","XXL"],"slug":"mens_chill_crew_neck_sweatshirt","tags":["sweatshirt"],"title":"Men’s Chill Crew Neck Sweatshirt","type":"shirts"}</body>
             <contentEncodings/>
@@ -123,7 +168,7 @@
             <xpathExpressions/>
         </mockResponse>
         <mockResponse>
-            <body>{"address":{"address":"Cra 11a No. 191-28","addressExtra":"Torre 2 Apto 1215","city":"Bogotá","country":{"_id":"1","name":"Colombia"},"lastName":"Saldarriaga","name":"Andrés","phoneNumber":"+573188386242","postalCode":"110141"},"items":[{"description":"Introducing the Tesla Chill Collection. The Men's Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.","gender":"men","images":["1740176-00-A_0_2000.jpg","1740176-00-A_1.jpg"],"inStock":7,"price":75,"sizes":["XS","S","M","L","XL","XXL"],"slug":"mens_chill_crew_neck_sweatshirt","tags":["sweatshirt"],"title":"Men's Chill Crew Neck Sweatshirt","type":"shirts"},{"description":"The Men's Quilted Shirt Jacket features a uniquely fit, quilted design for warmth and mobility in cold weather seasons. With an overall street-smart aesthetic, the jacket features subtle silicone injected Tesla logos below the back collar and on the right sleeve, as well as custom matte metal zipper pulls. Made from 87% nylon and 13% polyurethane.","gender":"men","images":["1740507-00-A_0_2000.jpg","1740507-00-A_1.jpg"],"inStock":5,"price":200,"sizes":["XS","S","M","XL","XXL"],"slug":"men_quilted_shirt_jacket","tags":["jacket"],"title":"Men's Quilted Shirt Jacket","type":"shirts"}]}</body>
+            <body>[{"_id":"1","address":{"address":"Cra 11a No. 191-28","addressExtra":"Torre 2 Apto 1215","city":"Bogotá","country":{"_id":"1","name":"Colombia"},"lastName":"Saldarriaga","name":"Andrés","phoneNumber":"+573188386242","postalCode":"110141"},"status":"pending","items":[{"description":"Introducing the Tesla Chill Collection. The Men's Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.","gender":"men","images":["1740176-00-A_0_2000.jpg","1740176-00-A_1.jpg"],"inStock":7,"price":75,"sizes":["XS","S","M","L","XL","XXL"],"slug":"mens_chill_crew_neck_sweatshirt","tags":["sweatshirt"],"title":"Men's Chill Crew Neck Sweatshirt","type":"shirts"},{"description":"The Men's Quilted Shirt Jacket features a uniquely fit, quilted design for warmth and mobility in cold weather seasons. With an overall street-smart aesthetic, the jacket features subtle silicone injected Tesla logos below the back collar and on the right sleeve, as well as custom matte metal zipper pulls. Made from 87% nylon and 13% polyurethane.","gender":"men","images":["1740507-00-A_0_2000.jpg","1740507-00-A_1.jpg"],"inStock":5,"price":200,"sizes":["XS","S","M","XL","XXL"],"slug":"men_quilted_shirt_jacket","tags":["jacket"],"title":"Men's Quilted Shirt Jacket","type":"shirts"}]},{"_id":"2","address":{"address":"Cra 11a No. 191-28","addressExtra":"Torre 2 Apto 1215","city":"Bogotá","country":{"_id":"1","name":"Colombia"},"lastName":"Saldarriaga","name":"Andrés","phoneNumber":"+573188386242","postalCode":"110141"},"status":"pending","items":[{"description":"Introducing the Tesla Chill Collection. The Men's Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.","gender":"men","images":["1740176-00-A_0_2000.jpg","1740176-00-A_1.jpg"],"inStock":7,"price":75,"sizes":["XS","S","M","L","XL","XXL"],"slug":"mens_chill_crew_neck_sweatshirt","tags":["sweatshirt"],"title":"Men's Chill Crew Neck Sweatshirt","type":"shirts"},{"description":"The Men's Quilted Shirt Jacket features a uniquely fit, quilted design for warmth and mobility in cold weather seasons. With an overall street-smart aesthetic, the jacket features subtle silicone injected Tesla logos below the back collar and on the right sleeve, as well as custom matte metal zipper pulls. Made from 87% nylon and 13% polyurethane.","gender":"men","images":["1740507-00-A_0_2000.jpg","1740507-00-A_1.jpg"],"inStock":5,"price":200,"sizes":["XS","S","M","XL","XXL"],"slug":"men_quilted_shirt_jacket","tags":["jacket"],"title":"Men's Quilted Shirt Jacket","type":"shirts"}]},{"_id":"3","address":{"address":"Cra 11a No. 191-28","addressExtra":"Torre 2 Apto 1215","city":"Bogotá","country":{"_id":"1","name":"Colombia"},"lastName":"Saldarriaga","name":"Andrés","phoneNumber":"+573188386242","postalCode":"110141"},"status":"pending","items":[{"description":"Introducing the Tesla Chill Collection. The Men's Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.","gender":"men","images":["1740176-00-A_0_2000.jpg","1740176-00-A_1.jpg"],"inStock":7,"price":75,"sizes":["XS","S","M","L","XL","XXL"],"slug":"mens_chill_crew_neck_sweatshirt","tags":["sweatshirt"],"title":"Men's Chill Crew Neck Sweatshirt","type":"shirts"},{"description":"The Men's Quilted Shirt Jacket features a uniquely fit, quilted design for warmth and mobility in cold weather seasons. With an overall street-smart aesthetic, the jacket features subtle silicone injected Tesla logos below the back collar and on the right sleeve, as well as custom matte metal zipper pulls. Made from 87% nylon and 13% polyurethane.","gender":"men","images":["1740507-00-A_0_2000.jpg","1740507-00-A_1.jpg"],"inStock":5,"price":200,"sizes":["XS","S","M","XL","XXL"],"slug":"men_quilted_shirt_jacket","tags":["jacket"],"title":"Men's Quilted Shirt Jacket","type":"shirts"}]},{"_id":"4","address":{"address":"Cra 11a No. 191-28","addressExtra":"Torre 2 Apto 1215","city":"Bogotá","country":{"_id":"1","name":"Colombia"},"lastName":"Saldarriaga","name":"Andrés","phoneNumber":"+573188386242","postalCode":"110141"},"status":"processed","items":[{"description":"Introducing the Tesla Chill Collection. The Men's Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.","gender":"men","images":["1740176-00-A_0_2000.jpg","1740176-00-A_1.jpg"],"inStock":7,"price":75,"sizes":["XS","S","M","L","XL","XXL"],"slug":"mens_chill_crew_neck_sweatshirt","tags":["sweatshirt"],"title":"Men's Chill Crew Neck Sweatshirt","type":"shirts"}]},{"_id":"5","address":{"address":"Cra 11a No. 191-28","addressExtra":"Torre 2 Apto 1215","city":"Bogotá","country":{"_id":"1","name":"Colombia"},"lastName":"Saldarriaga","name":"Andrés","phoneNumber":"+573188386242","postalCode":"110141"},"status":"pending","items":[{"description":"Introducing the Tesla Chill Collection. The Men's Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.","gender":"men","images":["1740176-00-A_0_2000.jpg","1740176-00-A_1.jpg"],"inStock":7,"price":75,"sizes":["XS","S","M","L","XL","XXL"],"slug":"mens_chill_crew_neck_sweatshirt","tags":["sweatshirt"],"title":"Men's Chill Crew Neck Sweatshirt","type":"shirts"},{"description":"The Men's Quilted Shirt Jacket features a uniquely fit, quilted design for warmth and mobility in cold weather seasons. With an overall street-smart aesthetic, the jacket features subtle silicone injected Tesla logos below the back collar and on the right sleeve, as well as custom matte metal zipper pulls. Made from 87% nylon and 13% polyurethane.","gender":"men","images":["1740507-00-A_0_2000.jpg","1740507-00-A_1.jpg"],"inStock":5,"price":200,"sizes":["XS","S","M","XL","XXL"],"slug":"men_quilted_shirt_jacket","tags":["jacket"],"title":"Men's Quilted Shirt Jacket","type":"shirts"}]}]</body>
             <contentEncodings/>
             <headerQueries/>
             <httpHeaders>
@@ -133,10 +178,10 @@
                 </httpHeader>
             </httpHeaders>
             <httpStatusCode>200</httpStatusCode>
-            <id>8rlGgQ</id>
+            <id>SLlYgH</id>
             <jsonPathExpressions/>
-            <methodId>4hJNHK</methodId>
-            <name>Get current order</name>
+            <methodId>zES5WU</methodId>
+            <name>Get client orders history</name>
             <parameterQueries/>
             <status>ENABLED</status>
             <usingExpressions>false</usingExpressions>
@@ -202,6 +247,55 @@
             <usingExpressions>false</usingExpressions>
             <xpathExpressions/>
         </mockResponse>
+        <mockResponse>
+            <body>{"_id":"${PATH_PARAMETER(parameter="id")}","address":{"address":"Cra 11a No. 191-28","addressExtra":"Torre 2 Apto 1215","city":"Bogotá","country":{"_id":"1","name":"Colombia"},"lastName":"Saldarriaga","name":"Andrés","phoneNumber":"+573188386242","postalCode":"110141"},"status":"processed","items":[{"description":"Introducing the Tesla Chill Collection. The Men's Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.","gender":"men","images":["1740176-00-A_0_2000.jpg","1740176-00-A_1.jpg"],"inStock":7,"price":75,"sizes":["XS","S","M","L","XL","XXL"],"slug":"mens_chill_crew_neck_sweatshirt","tags":["sweatshirt"],"title":"Men's Chill Crew Neck Sweatshirt","type":"shirts"}]}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>Content-Type</name>
+                    <value>application/json</value>
+                </httpHeader>
+            </httpHeaders>
+            <httpStatusCode>200</httpStatusCode>
+            <id>pcz4AC</id>
+            <jsonPathExpressions/>
+            <methodId>adAkYN</methodId>
+            <name>Get processed order by id</name>
+            <parameterQueries>
+                <parameterQuery>
+                    <matchAny>false</matchAny>
+                    <matchCase>false</matchCase>
+                    <matchRegex>false</matchRegex>
+                    <parameter>id</parameter>
+                    <query>1234</query>
+                    <urlEncoded>false</urlEncoded>
+                </parameterQuery>
+            </parameterQueries>
+            <status>ENABLED</status>
+            <usingExpressions>true</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
+        <mockResponse>
+            <body>{"_id":"${PATH_PARAMETER(parameter="id")}","address":{"address":"Cra 11a No. 191-28","addressExtra":"Torre 2 Apto 1215","city":"Bogotá","country":{"_id":"1","name":"Colombia"},"lastName":"Saldarriaga","name":"Andrés","phoneNumber":"+573188386242","postalCode":"110141"},"status":"pending","items":[{"description":"Introducing the Tesla Chill Collection. The Men's Chill Crew Neck Sweatshirt has a premium, heavyweight exterior and soft fleece interior for comfort in any season. The sweatshirt features a subtle thermoplastic polyurethane T logo on the chest and a Tesla wordmark below the back collar. Made from 60% cotton and 40% recycled polyester.","gender":"men","images":["1740176-00-A_0_2000.jpg","1740176-00-A_1.jpg"],"inStock":7,"price":75,"sizes":["XS","S","M","L","XL","XXL"],"slug":"mens_chill_crew_neck_sweatshirt","tags":["sweatshirt"],"title":"Men's Chill Crew Neck Sweatshirt","type":"shirts"},{"description":"The Men's Quilted Shirt Jacket features a uniquely fit, quilted design for warmth and mobility in cold weather seasons. With an overall street-smart aesthetic, the jacket features subtle silicone injected Tesla logos below the back collar and on the right sleeve, as well as custom matte metal zipper pulls. Made from 87% nylon and 13% polyurethane.","gender":"men","images":["1740507-00-A_0_2000.jpg","1740507-00-A_1.jpg"],"inStock":5,"price":200,"sizes":["XS","S","M","XL","XXL"],"slug":"men_quilted_shirt_jacket","tags":["jacket"],"title":"Men's Quilted Shirt Jacket","type":"shirts"}]}</body>
+            <contentEncodings/>
+            <headerQueries/>
+            <httpHeaders>
+                <httpHeader>
+                    <name>Content-Type</name>
+                    <value>application/json</value>
+                </httpHeader>
+            </httpHeaders>
+            <httpStatusCode>200</httpStatusCode>
+            <id>eo5aMY</id>
+            <jsonPathExpressions/>
+            <methodId>adAkYN</methodId>
+            <name>Get pending order by id</name>
+            <parameterQueries/>
+            <status>ENABLED</status>
+            <usingExpressions>true</usingExpressions>
+            <xpathExpressions/>
+        </mockResponse>
     </mockResponses>
     <project>
         <created>2023-01-27T21:44:13.044Z</created>
@@ -214,6 +308,13 @@
     <resources>
         <resource>
             <applicationId>E7kmQh</applicationId>
+            <id>4sOnRk</id>
+            <methods/>
+            <name>/orders/current</name>
+            <uri>/orders/current</uri>
+        </resource>
+        <resource>
+            <applicationId>E7kmQh</applicationId>
             <id>CCiq8w</id>
             <methods/>
             <name>/products/{slug}</name>
@@ -221,10 +322,10 @@
         </resource>
         <resource>
             <applicationId>E7kmQh</applicationId>
-            <id>4sOnRk</id>
+            <id>DUT1Vg</id>
             <methods/>
-            <name>/orders/current</name>
-            <uri>/orders/current</uri>
+            <name>/orders/history</name>
+            <uri>/orders/history</uri>
         </resource>
         <resource>
             <applicationId>E7kmQh</applicationId>
@@ -246,6 +347,13 @@
             <methods/>
             <name>/countries</name>
             <uri>/countries</uri>
+        </resource>
+        <resource>
+            <applicationId>E7kmQh</applicationId>
+            <id>TxS8SN</id>
+            <methods/>
+            <name>/orders/{id}</name>
+            <uri>/orders/{id}</uri>
         </resource>
     </resources>
 </restExportContainer>

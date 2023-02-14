@@ -6,24 +6,20 @@ import {
 	Grid,
 	IconButton,
 	Stack,
-	Switch,
 	Toolbar,
 	Typography,
 } from "@mui/material";
-import { FC, useContext, useState } from "react";
+import { FC, useState } from "react";
 import {
-	LightMode as LightModeIcon,
 	Menu as MenuIcon,
-	ModeNight as ModeNightIcon,
 	Search as SearchIcon,
 	ShoppingCart as ShoppingCartIcon,
 } from "@mui/icons-material";
 import AppDrawer from "./AppDrawer";
 import Link from "next/link";
-import ThemeModeContext from "@/context/ThemeModeContext";
+import ThemeSwitch from "./ThemeSwitch";
 
 const AppBar: FC = () => {
-	const { mode, toggleMode } = useContext(ThemeModeContext);
 	const [openDrawer, setOpenDrawer] = useState(false);
 	return (
 		<>
@@ -140,15 +136,7 @@ const AppBar: FC = () => {
 										</Badge>
 									</IconButton>
 								</Link>
-								<Switch
-									color="secondary"
-									checked={mode === "dark"}
-									onChange={(): void => toggleMode()}
-									icon={<LightModeIcon fontSize="small" />}
-									checkedIcon={
-										<ModeNightIcon fontSize="small" />
-									}
-								/>
+								<ThemeSwitch />
 							</Grid>
 						</Grid>
 					</Toolbar>
