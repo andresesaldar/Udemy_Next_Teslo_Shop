@@ -51,8 +51,20 @@ const AuthLayout: FC<AuthLayoutProps> = ({ children, title, description }) => (
 								sx={{ flexGrow: 1 }}
 							>
 								<ShoppingBagIcon fontSize="large" />
-								<Typography variant="h4" component="h1">
-									Teslo Shop
+								<Typography
+									variant="h4"
+									component="h1"
+									alignItems="center"
+									display="flex"
+								>
+									Teslo |
+									<Typography
+										variant="h5"
+										component="span"
+										ml={1}
+									>
+										Shop
+									</Typography>
 								</Typography>
 							</Stack>
 							<ThemeSwitch />
