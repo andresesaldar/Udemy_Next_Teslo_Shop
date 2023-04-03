@@ -1,27 +1,31 @@
-import { GetStaticProps } from "next";
+import FullScreenLoader from "@/components/shared/FullScreenLoader";
 import { NextPageWithLayout } from "./_app";
-import Product from "@/models/product";
 import ProductsGrid from "@/components/products/ProductsGrid";
 import { ReactElement } from "react";
 import ShopLayout from "@/layouts/ShopLayout";
 import { Typography } from "@mui/material";
-import { getAllProducts } from "@/integration/products";
+import { useAllProducts } from "@/integration/products";
 
-type HomeProps = {
-	products: Product[];
+const Home: NextPageWithLayout = () => {
+	const { data: products, isLoading } = useAllProducts();
+	return (
+		<>
+			<Typography variant="h4" component="h1">
+				Shop
+			</Typography>
+			<Typography variant="subtitle1" component="h2">
+				All Products
+			</Typography>
+			{isLoading ? (
+				<FullScreenLoader />
+			) : !products ? (
+				<div>No data</div>
+			) : (
+				<ProductsGrid products={products} />
+			)}
+		</>
+	);
 };
-
-const Home: NextPageWithLayout<HomeProps> = ({ products }) => (
-	<>
-		<Typography variant="h4" component="h1">
-			Shop
-		</Typography>
-		<Typography variant="subtitle1" component="h2">
-			All Products
-		</Typography>
-		<ProductsGrid products={products} />
-	</>
-);
 
 Home.getLayout = (page): ReactElement => (
 	<ShopLayout
@@ -31,11 +35,5 @@ Home.getLayout = (page): ReactElement => (
 		{page}
 	</ShopLayout>
 );
-
-export const getStaticProps: GetStaticProps<HomeProps> = async () => ({
-	props: {
-		products: await getAllProducts(),
-	},
-});
 
 export default Home;

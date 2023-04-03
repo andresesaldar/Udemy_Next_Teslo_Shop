@@ -45,6 +45,8 @@ const productSchema = new Schema<Product>(
 	},
 );
 
+productSchema.index({ tags: "text", title: "text" });
+
 const ProductModel: Model<Product> =
 	models.Product || model("Product", productSchema);
 

@@ -3,6 +3,7 @@ import {
 	CardActionArea,
 	CardContent,
 	CardMedia,
+	Fade,
 	Typography,
 } from "@mui/material";
 import { FC, useState } from "react";
@@ -15,6 +16,8 @@ type ProductCardProps = {
 
 const ProductCard: FC<ProductCardProps> = ({ product }) => {
 	const [hovered, setHovered] = useState(false);
+	const [isImgLoaded, setIsImgLoaded] = useState(false);
+
 	return (
 		<Card>
 			<Link
@@ -29,24 +32,30 @@ const ProductCard: FC<ProductCardProps> = ({ product }) => {
 				>
 					<CardMedia
 						component="img"
-						image={`images/products/${
+						image={`/images/products/${
 							hovered ? product.images[1] : product.images[0]
 						}`}
 						alt={product.title}
+						onLoad={(): void => setIsImgLoaded(true)}
 					/>
-					<CardContent
-						sx={{
-							display: "flex",
-							justifyContent: "space-between",
-						}}
-					>
-						<Typography variant="subtitle1" maxWidth="75%">
-							{product.title}
-						</Typography>
-						<Typography variant="overline" color="text.secondary">
-							${product.price}
-						</Typography>
-					</CardContent>
+					<Fade in={isImgLoaded}>
+						<CardContent
+							sx={{
+								display: "flex",
+								justifyContent: "space-between",
+							}}
+						>
+							<Typography variant="subtitle1" maxWidth="75%">
+								{product.title}
+							</Typography>
+							<Typography
+								variant="overline"
+								color="text.secondary"
+							>
+								${product.price}
+							</Typography>
+						</CardContent>
+					</Fade>
 				</CardActionArea>
 			</Link>
 		</Card>

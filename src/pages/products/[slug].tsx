@@ -1,5 +1,5 @@
 import { GetStaticPaths, GetStaticProps } from "next";
-import { getAllProducts, getProductBySlug } from "@/integration/products";
+import { getProductBySlug, getProducts } from "@/services/products";
 import { NextPageWithLayout } from "../_app";
 import Product from "@/models/product";
 import ProductDetailUI from "@/components/products/ProductDetail";
@@ -25,7 +25,7 @@ ProductDetail.getLayout = (page, { product }): ReactElement => (
 );
 
 export const getStaticPaths: GetStaticPaths<ProductDetailParams> = async () => {
-	const products = await getAllProducts();
+	const products = await getProducts();
 	return {
 		fallback: false,
 		paths: products.map(({ slug }) => ({ params: { slug } })),
@@ -38,11 +38,15 @@ export const getStaticProps: GetStaticProps<
 > = async (ctx) => {
 	const slug = ctx.params?.slug.toString() || "";
 	const product = await getProductBySlug(slug);
-	return {
-		props: {
-			product,
-		},
-	};
+	return product
+		? {
+				props: {
+					product,
+				},
+		  }
+		: {
+				notFound: true,
+		  };
 };
 
 export default ProductDetail;

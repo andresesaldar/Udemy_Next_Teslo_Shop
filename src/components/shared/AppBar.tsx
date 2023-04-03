@@ -97,7 +97,7 @@ const AppBar: FC = () => {
 										</Button>
 									</Link>
 									<Link
-										href="/category/child"
+										href="/category/kid"
 										style={{
 											color: "inherit",
 											textDecoration: "none",

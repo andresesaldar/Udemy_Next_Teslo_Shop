@@ -1,11 +1,15 @@
+import useSWR, { SWRConfiguration, SWRResponse } from "swr";
 import Order from "@/models/order";
-import httpClient from ".";
 
-export const getCurrentOrder = (): Promise<Order> =>
-	httpClient.get<Order>("/orders/current").then(({ data }) => data);
+export const useCurrentOrder = (
+	config?: SWRConfiguration,
+): SWRResponse<Order> => useSWR("/orders/current", config);
 
-export const getOrderById = (id: string): Promise<Order> =>
-	httpClient.get<Order>(`/orders/${id}`).then(({ data }) => data);
+export const useOrderById = (
+	id: string,
+	config?: SWRConfiguration,
+): SWRResponse<Order> => useSWR(`/orders/${id}`, config);
 
-export const getOrdersHistory = (): Promise<Order[]> =>
-	httpClient.get<Order[]>("/orders/history").then(({ data }) => data);
+export const useOrdersHistory = (
+	config?: SWRConfiguration,
+): SWRResponse<Order[]> => useSWR("/orders/history", config);

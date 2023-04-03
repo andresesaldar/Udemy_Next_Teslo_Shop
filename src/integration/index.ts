@@ -5,3 +5,6 @@ const httpClient = axios.create({
 });
 
 export default httpClient;
+
+export const fetcher = <T>(url: string): Promise<T> =>
+	httpClient.get<T>(url).then((res) => res.data);

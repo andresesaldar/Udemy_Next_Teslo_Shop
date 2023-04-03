@@ -11,7 +11,7 @@ export type ProductGender = (typeof ProductGenders)[number];
 type Product = Entity & {
 	type: ProductType;
 	description: string;
-	images?: string[];
+	images: string[];
 	inStock: number;
 	price: number;
 	sizes?: ProductSize[];

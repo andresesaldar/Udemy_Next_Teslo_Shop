@@ -1,8 +1,13 @@
+import useSWR, { SWRConfiguration, SWRResponse } from "swr";
 import Product from "@/models/product";
-import httpClient from ".";
 
-export const getAllProducts = (): Promise<Product[]> =>
-	httpClient.get<Product[]>("/products").then(({ data }) => data);
+export const useAllProducts = (
+	category?: string,
+	config?: SWRConfiguration,
+): SWRResponse<Product[]> =>
+	useSWR(`/products${category ? `?gender=${category}` : ""}`, config);
 
-export const getProductBySlug = (slug: string): Promise<Product> =>
-	httpClient.get<Product>(`/products/${slug}`).then(({ data }) => data);
+export const useProductBySlug = (
+	slug: string,
+	config?: SWRConfiguration,
+): SWRResponse<Product> => useSWR(`/products/${slug}`, config);
