@@ -23,19 +23,31 @@ import {
 	ListSubheader,
 } from "@mui/material";
 import { FC, ReactElement } from "react";
+import { useRouter } from "next/router";
 
 type MenuItem = {
 	icon: ReactElement;
 	text: string;
 	onlySm?: boolean;
+	path?: string;
 };
 
 const menuItems: MenuItem[] = [
 	{ icon: <AccountCircleIcon />, text: "Profile" },
 	{ icon: <ConfirmationNumberIcon />, text: "My Orders" },
-	{ icon: <MaleIcon />, onlySm: true, text: "Male" },
-	{ icon: <FemaleIcon />, onlySm: true, text: "Female" },
-	{ icon: <EscalatorWarningIcon />, onlySm: true, text: "Kids" },
+	{ icon: <MaleIcon />, onlySm: true, path: "/category/men", text: "Male" },
+	{
+		icon: <FemaleIcon />,
+		onlySm: true,
+		path: "/category/women",
+		text: "Female",
+	},
+	{
+		icon: <EscalatorWarningIcon />,
+		onlySm: true,
+		path: "/category/kid",
+		text: "Kids",
+	},
 ];
 const adminMenuItems: MenuItem[] = [
 	{ icon: <CategoryIcon />, text: "Products" },
@@ -48,14 +60,17 @@ type AppDrawerProps = {
 	onClose: () => void;
 };
 
-const listGroup = (menuItems: MenuItem[]): ReactElement[] =>
-	menuItems.map(({ icon, text, onlySm }, index) => (
+const listGroup = (
+	menuItems: MenuItem[],
+	onItemClick: (path?: string) => void,
+): ReactElement[] =>
+	menuItems.map(({ icon, text, onlySm, path }, index) => (
 		<ListItem
 			key={index}
 			disablePadding
 			sx={onlySm ? { display: { md: "none", xs: "inherit" } } : undefined}
 		>
-			<ListItemButton>
+			<ListItemButton onClick={(): void => onItemClick(path)}>
 				<ListItemIcon>{icon}</ListItemIcon>
 				<ListItemText primary={text} />
 			</ListItemButton>
@@ -63,6 +78,13 @@ const listGroup = (menuItems: MenuItem[]): ReactElement[] =>
 	));
 
 const AppDrawer: FC<AppDrawerProps> = ({ open, onClose }) => {
+	const router = useRouter();
+
+	const onItemClick = (path?: string): void => {
+		onClose();
+		if (path) router.push(path);
+	};
+
 	return (
 		<Drawer open={open} onClose={onClose}>
 			<Box
@@ -85,10 +107,10 @@ const AppDrawer: FC<AppDrawerProps> = ({ open, onClose }) => {
 							}
 						/>
 					</ListItem>
-					{listGroup(menuItems)}
+					{listGroup(menuItems, onItemClick)}
 					<Divider />
 					<ListSubheader>Admin</ListSubheader>
-					{listGroup(adminMenuItems)}
+					{listGroup(adminMenuItems, onItemClick)}
 				</List>
 			</Box>
 		</Drawer>

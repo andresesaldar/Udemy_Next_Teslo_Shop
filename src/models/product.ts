@@ -14,7 +14,7 @@ type Product = Entity & {
 	images: string[];
 	inStock: number;
 	price: number;
-	sizes?: ProductSize[];
+	sizes: ProductSize[];
 	tags?: string[];
 	title: string;
 	slug: string;

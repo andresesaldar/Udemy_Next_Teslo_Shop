@@ -11,7 +11,7 @@ import Order from "@/models/order";
 import OrderSummary from "@/components/cart/OrderSummary";
 import { ReactElement } from "react";
 import ShopLayout from "@/layouts/ShopLayout";
-import { getOrderById } from "@/integration/orders";
+import httpClient from "@/integration";
 
 type OrderDetailParams = {
 	id: string;
@@ -89,9 +89,10 @@ export const getServerSideProps: GetServerSideProps<
 	OrderDetailParams
 > = async (ctx) => {
 	const id = ctx.params?.id || "";
+	const { data: order } = await httpClient.get<Order>(`/orders/${id}`);
 	return {
 		props: {
-			order: await getOrderById(id),
+			order,
 		},
 	};
 };

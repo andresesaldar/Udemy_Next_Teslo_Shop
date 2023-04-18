@@ -4,11 +4,12 @@ import AddressSummary from "@/components/checkout/AddressSummary";
 import CartItemsSummary from "@/components/cart/CartItemsSummary";
 import { GetServerSideProps } from "next";
 import { NextPageWithLayout } from "../_app";
+import Order from "@/models/order";
 import OrderSummary from "@/components/cart/OrderSummary";
 import Product from "@/models/product";
 import { ReactElement } from "react";
 import ShopLayout from "@/layouts/ShopLayout";
-import { getCurrentOrder } from "@/integration/orders";
+import httpClient from "@/integration";
 
 type OrderSummaryProps = {
 	orderItems: Product[];
@@ -49,7 +50,9 @@ Summary.getLayout = (page): ReactElement => (
 export const getServerSideProps: GetServerSideProps<
 	OrderSummaryProps
 > = async () => {
-	const { address, items: orderItems } = await getCurrentOrder();
+	const {
+		data: { address, items: orderItems },
+	} = await httpClient.get<Order>("/orders/current");
 	return {
 		props: {
 			address,

@@ -16,7 +16,7 @@ db.products.insertMany([
 		tags: ["sweatshirt"],
 		title: "Men’s Chill Crew Neck Sweatshirt",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -31,7 +31,7 @@ db.products.insertMany([
 		tags: ["jacket"],
 		title: "Men's Quilted Shirt Jacket",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -46,7 +46,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Raven Lightweight Zip Up Bomber Jacket",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -61,7 +61,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Turbine Long Sleeve Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -76,7 +76,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Turbine Short Sleeve Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -91,7 +91,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Cybertruck Owl Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -106,7 +106,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Solar Roof Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -121,7 +121,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Let the Sun Shine Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -136,7 +136,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's 3D Large Wordmark Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -151,7 +151,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's 3D T Logo Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -166,7 +166,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men’s 3D Small Wordmark Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -181,7 +181,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Plaid Mode Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -196,7 +196,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Powerwall Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -211,7 +211,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Battery Day Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -226,7 +226,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men’s Cybertruck Bulletproof Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -241,7 +241,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Haha Yes Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -256,7 +256,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's S3XY Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -271,7 +271,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's 3D Wordmark Long Sleeve Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -286,7 +286,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's 3D T Logo Long Sleeve Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -301,7 +301,7 @@ db.products.insertMany([
 		tags: ["hoodie"],
 		title: "Men's Raven Lightweight Hoodie",
 		type: "hoodies",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -316,7 +316,7 @@ db.products.insertMany([
 		tags: ["hoodie"],
 		title: "Chill Pullover Hoodie",
 		type: "hoodies",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -331,7 +331,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Chill Full Zip Hoodie",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -346,7 +346,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Chill Quarter Zip Pullover - Gray",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -361,7 +361,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Men's Chill Quarter Zip Pullover - White",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -376,7 +376,7 @@ db.products.insertMany([
 		tags: ["hoodie"],
 		title: "3D Large Wordmark Pullover Hoodie",
 		type: "hoodies",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -391,7 +391,7 @@ db.products.insertMany([
 		tags: ["hoodie"],
 		title: "Cybertruck Graffiti Hoodie",
 		type: "hoodies",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -406,7 +406,7 @@ db.products.insertMany([
 		tags: ["hats"],
 		title: "Relaxed T Logo Hat",
 		type: "hats",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -421,7 +421,7 @@ db.products.insertMany([
 		tags: ["hats"],
 		title: "Thermal Cuffed Beanie",
 		type: "hats",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -436,7 +436,7 @@ db.products.insertMany([
 		tags: ["hoodie"],
 		title: "Women's Cropped Puffer Jacket",
 		type: "hoodies",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -451,7 +451,7 @@ db.products.insertMany([
 		tags: ["hoodie"],
 		title: "Women's Chill Half Zip Cropped Hoodie",
 		type: "hoodies",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -466,7 +466,7 @@ db.products.insertMany([
 		tags: ["hoodie"],
 		title: "Women's Raven Slouchy Crew Sweatshirt",
 		type: "hoodies",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -481,7 +481,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Women's Turbine Cropped Long Sleeve Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -496,7 +496,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Women's Turbine Cropped Short Sleeve Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -511,7 +511,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Women's T Logo Short Sleeve Scoop Neck Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -526,7 +526,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Women's T Logo Long Sleeve Scoop Neck Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -541,7 +541,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Women's Small Wordmark Short Sleeve V-Neck Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -556,7 +556,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Women's Large Wordmark Short Sleeve Crew Neck Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -571,7 +571,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Women's Plaid Mode Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -586,7 +586,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Women’s Powerwall Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -601,7 +601,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Women's Corp Jacket",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -616,7 +616,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Women's Raven Joggers",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -631,7 +631,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Kids Cybertruck Long Sleeve Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -646,7 +646,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Kids Scribble T Logo Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -661,12 +661,12 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Kids Cybertruck Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
 		description:
-			"The refreshed Kids Racing Stripe Tee is made from 100% Peruvian cotton, featuring a newly enhanced racing stripe with a brushed Tesla wordmark that's perfect for any speed racer.",
+			"The refreshed Kids Racing Stripe Tee is made from 100% Peruvian cotton, featuring a newly enhanced racing stripe with a brushed Tesla wordmark that's perfect for any sped racer.",
 		gender: "kid",
 		images: ["8529354-00-A_0_2000.jpg", "8529354-00-A_1.jpg"],
 		inStock: 10,
@@ -676,7 +676,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Kids Racing Stripe Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -691,12 +691,12 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Kids 3D T Logo Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
 		description:
-			"The checkered tee is made from long grain, GMO free Peruvian cotton. Peru is the only country in the world where cotton is picked by hand on a large scale. The 4,500-year-old tradition prevents damage to the fiber during the picking process and removes the need to use chemicals to open the cotton plants before harvest. This environmentally friendly process results in cotton that is soft, strong, and lustrous – and the tee will get even softer with every wash.",
+			"The checkered tee is made from long grain, GMO free Peruvian cotton. Peru is the only country in the world where cotton is picked by hand on a large scale. The 4,500-year-old tradition prevents damage to the fiber during the picking process and removes the ned to use chemicals to open the cotton plants before harvest. This environmentally friendly process results in cotton that is soft, strong, and lustrous – and the tee will get even softer with every wash.",
 		gender: "kid",
 		images: ["100042307_0_2000.jpg", "100042307_alt_2000.jpg"],
 		inStock: 10,
@@ -706,7 +706,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Kids Checkered Tee",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -721,7 +721,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Made on Earth by Humans Onesie",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -736,7 +736,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Scribble T Logo Onesie",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -751,7 +751,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Zero Emissions (Almost) Onesie",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -766,7 +766,7 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Kids Cyberquad Bomber Jacket",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 	{
 		createdAt: new Date(),
@@ -781,6 +781,6 @@ db.products.insertMany([
 		tags: ["shirt"],
 		title: "Kids Corp Jacket",
 		type: "shirts",
-		updateedAt: new Date(),
+		updatedAt: new Date(),
 	},
 ]);

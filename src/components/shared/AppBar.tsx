@@ -18,9 +18,31 @@ import {
 import AppDrawer from "./AppDrawer";
 import Link from "next/link";
 import ThemeSwitch from "./ThemeSwitch";
+import { useRouter } from "next/router";
+
+type AppBarLinkProps = {
+	path: string;
+	label: string;
+};
+
+const AppBarLink: FC<AppBarLinkProps> = ({ label, path }) => {
+	const router = useRouter();
+
+	return (
+		<Button
+			component={Link}
+			href={path}
+			size="small"
+			color={router.asPath === path ? "primary" : "inherit"}
+		>
+			{label}
+		</Button>
+	);
+};
 
 const AppBar: FC = () => {
 	const [openDrawer, setOpenDrawer] = useState(false);
+
 	return (
 		<>
 			<Box sx={{ flexGrow: 1 }}>
@@ -74,39 +96,18 @@ const AppBar: FC = () => {
 								}}
 							>
 								<Stack direction="row" spacing={1}>
-									<Link
-										href="/category/men"
-										style={{
-											color: "inherit",
-											textDecoration: "none",
-										}}
-									>
-										<Button size="small" color="inherit">
-											Men
-										</Button>
-									</Link>
-									<Link
-										href="/category/women"
-										style={{
-											color: "inherit",
-											textDecoration: "none",
-										}}
-									>
-										<Button size="small" color="inherit">
-											Women
-										</Button>
-									</Link>
-									<Link
-										href="/category/kid"
-										style={{
-											color: "inherit",
-											textDecoration: "none",
-										}}
-									>
-										<Button size="small" color="inherit">
-											Child
-										</Button>
-									</Link>
+									<AppBarLink
+										label="Men"
+										path="/category/men"
+									/>
+									<AppBarLink
+										label="Women"
+										path="/category/women"
+									/>
+									<AppBarLink
+										label="Children"
+										path="/category/kid"
+									/>
 								</Stack>
 							</Grid>
 							<Grid

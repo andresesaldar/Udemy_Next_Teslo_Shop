@@ -10,7 +10,7 @@ import { GetServerSideProps } from "next";
 import Link from "next/link";
 import { NextPageWithLayout } from "../_app";
 import ShopLayout from "@/layouts/ShopLayout";
-import { getOrdersHistory } from "@/integration/orders";
+import httpClient from "@/integration";
 
 type OrderData = {
 	id: string;
@@ -108,10 +108,13 @@ History.getLayout = (page): ReactElement => (
 
 export const getServerSideProps: GetServerSideProps<
 	HistoryProps
-> = async () => ({
-	props: {
-		orders: await getOrdersHistory(),
-	},
-});
+> = async () => {
+	const { data: orders } = await httpClient.get<Order[]>(`/orders/history`);
+	return {
+		props: {
+			orders,
+		},
+	};
+};
 
 export default History;

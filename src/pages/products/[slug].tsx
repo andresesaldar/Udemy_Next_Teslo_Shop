@@ -25,9 +25,9 @@ ProductDetail.getLayout = (page, { product }): ReactElement => (
 );
 
 export const getStaticPaths: GetStaticPaths<ProductDetailParams> = async () => {
-	const products = await getProducts();
+	const products = await getProducts(undefined, ["slug"]);
 	return {
-		fallback: false,
+		fallback: "blocking",
 		paths: products.map(({ slug }) => ({ params: { slug } })),
 	};
 };
@@ -41,8 +41,9 @@ export const getStaticProps: GetStaticProps<
 	return product
 		? {
 				props: {
-					product,
+					product: JSON.parse(JSON.stringify(product)),
 				},
+				revalidate: 60 * 60 * 24,
 		  }
 		: {
 				notFound: true,

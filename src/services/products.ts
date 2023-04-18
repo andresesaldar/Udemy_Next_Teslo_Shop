@@ -13,11 +13,12 @@ const selectArgs: readonly (keyof Product)[] = [
 
 export const getProducts = async (
 	gender?: ProductGender,
+	only?: (keyof Product)[],
 ): Promise<Pick<Product, (typeof selectArgs)[number]>[]> => {
 	await connect();
 	return ProductModel.find(gender ? { gender } : {})
 		.lean()
-		.select(selectArgs.join(" ").concat(" -_id"))
+		.select((only ? only : selectArgs).join(" ").concat(" -_id"))
 		.sort({ createdAt: "desc" });
 };
 
